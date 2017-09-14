@@ -7,27 +7,60 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Button, Radio, Icon} from 'antd';
 
-/*let Hello = React.createClass({
-    render(){
-        return (
-            <div>
-                <Radio/>
-            </div>
-        )
-    }
-});*/
 
 class ButtonSize extends React.Component{
 
-     render(){
+
+    constructor(props) {
+        super(props);
+        console.log(this);
+        this.state = {
+            size: 'default'
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+
+    handleClick(event){
+        console.log(this);
+        console.log(event.target.value);
+        this.setState({
+            size: event.target.value
+        })
+    };
+
+    render(){
+        console.log(this);
+        let size = this.state.size;
         return (
             <div>
-                <Radio/>
+                <Radio.Group value={size} onChange={this.handleClick}>
+                    <Radio.Button value="large">large</Radio.Button>
+                    <Radio.Button value="default">default</Radio.Button>
+                    <Radio.Button value="small">small</Radio.Button>
+                </Radio.Group>
+
+                <br/><br/>
+
+                <Button type='primary' size={size} shape='circle' icon='download'/>
+                <Button type='dashed' size={size} icon='download'>download</Button>
+                <Button type='danger' size={size}>download</Button>
+
+                <br/><br/>
+
+                <Button.Group size={size}>
+                    <Button type='primary'>
+                        <Icon type="left"/>Backward
+                    </Button>
+                    &nbsp;
+                    <Button type='primary'>
+                        <Icon type="right"/>Forward
+                    </Button>
+                </Button.Group>
             </div>
-        )
+        );
     }
 }
 
