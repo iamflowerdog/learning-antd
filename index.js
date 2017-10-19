@@ -22,31 +22,32 @@ import {DatePicker, Button} from 'antd';
 import ButtonSize from './components/buttonSize';
 import ButtonLoading from './components/button_loading';
 import TreeDemo from './components/03.tree'
+import Dynamic from './components/04.DynamicFieldSet';
 
 
 function App() {
     return (
         <div>
-                <h1>海哥教你玩转antd</h1>
+            <h1>海哥教你玩转antd</h1>
             <hr/>
             <br/>
-                <DatePicker/>
+            <DatePicker/>
             <br/><br/><br/>
 
             <hr/>
 
-                <Button type='primary'> primary </Button>
-                <Button> default </Button>
-                <Button type='dashed'> dashed </Button>
-                <Button type='danger'> danger </Button>
+            <Button type='primary'> primary </Button>
+            <Button> default </Button>
+            <Button type='dashed'> dashed </Button>
+            <Button type='danger'> danger </Button>
 
             <br/><br/><br/>
 
-                <ButtonSize/>
+            <ButtonSize/>
 
             <br/><br/><br/>
 
-                <ButtonLoading/>
+            <ButtonLoading/>
 
 
         </div>
@@ -56,7 +57,7 @@ function App() {
 function Root1() {
     return (
         <div>
-                <TreeDemo/>
+            <Dynamic/>
         </div>
     )
 }
