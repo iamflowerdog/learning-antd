@@ -23,6 +23,7 @@ import ButtonSize from './components/buttonSize';
 import ButtonLoading from './components/button_loading';
 import TreeDemo from './components/03.tree'
 import Dynamic from './components/04.DynamicFieldSet';
+import DynamicSelf from './components/05.dynamic-self';
 
 
 function App() {
@@ -61,6 +62,15 @@ function Root1() {
         </div>
     )
 }
+
+function Root2() {
+
+}
+
+ReactDOM.render(
+    <DynamicSelf/>,
+    document.getElementById('root2')
+);
 
 ReactDOM.render(
     <App/>,

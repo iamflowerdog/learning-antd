@@ -15,7 +15,7 @@ class ButtonSize extends React.Component{
 
     constructor(props) {
         super(props);
-        console.log(this);
+        // console.log(this);
         this.state = {
             size: 'default'
         };
@@ -32,7 +32,7 @@ class ButtonSize extends React.Component{
     };
 
     render(){
-        console.log(this);
+       // console.log(this);
         let size = this.state.size;
         return (
             <div>

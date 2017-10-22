@@ -10,7 +10,7 @@ export default class ButtonLoading extends React.Component {
      render(){
          return (
              <div>
-                 <Button type='danger' loading={{delay: 2}}>
+                 <Button type='danger'>
                      按钮
                  </Button>
              </div>
