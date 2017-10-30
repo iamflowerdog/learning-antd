@@ -83,7 +83,8 @@ class DynamicSelf extends React.Component{
         };
 
 
-        getFieldDecorator('keys', {initialValue: []});
+        getFieldDecorator('keys', {initialValue: [{'names': undefined}]});
+
         const keys = getFieldValue('keys');
 
         const formItems = keys.map((k, index) => {
@@ -95,7 +96,7 @@ class DynamicSelf extends React.Component{
                                 {required: true, message: '请输入表单信息'}
                             ]
                         })(
-                            <Input/>
+                            <Input placeholder="请输入律师姓名" style={{width: '60%', marginRight: 8}}/>
                         )
                     }
                     {
