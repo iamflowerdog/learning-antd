@@ -72,6 +72,46 @@ class Dynamic extends React.Component{
     }
 
     handleClick(){
+        let item = {
+            workMethod: '1011000002',
+            applyMemberDTOs: [
+                {
+                    names: '测试',
+                    email: '1111@11.com',
+                    phone: '13839425758',
+                },
+                {
+                    names: 'hhh',
+                    email: '222@11.com',
+                    phone: '13833425758',
+                },
+                {
+                    names: 'ttt',
+                    email: 'rrr@11.com',
+                    phone: '13836425758',
+                },
+            ]
+        };
+        let applyMemberDTOs = item.applyMemberDTOs.map((item,index) => {
+            return -index;
+        });
+
+        const {getFieldDecorator, setFieldsValue} = this.props.form;
+
+        getFieldDecorator('keys', {initialValue: applyMemberDTOs});
+        setFieldsValue({
+            workMethod: item.workMethod,
+            keys: applyMemberDTOs
+        });
+        applyMemberDTOs.map((k, index) => {
+            
+            ['names', 'email', 'phone'].forEach((field,index) => {
+                getFieldDecorator(`${field}-${k}`, {initialValue: item.applyMemberDTOs[-k][field]});
+            })
+            // getFieldDecorator(`names-${k}`, {initialValue: item.applyMemberDTOs[-k].names});
+            // getFieldDecorator(`email-${k}`, {initialValue: item.applyMemberDTOs[-k].email});
+            // getFieldDecorator(`phone-${k}`, {initialValue: item.applyMemberDTOs[-k].phone});
+        })
 
     }
 
