@@ -7,6 +7,7 @@ import ButtonLoading from './components/button_loading';
 import TreeDemo from './components/03.tree'
 import Dynamic from './components/04.DynamicFieldSet';
 import DynamicSelf from './components/05.dynamic-self';
+import D06 from './components/06.dynamic-button';
 
 
 function App() {
@@ -42,6 +43,7 @@ function Root1() {
     return (
         <div>
 
+            <D06/>
         </div>
     )
 }

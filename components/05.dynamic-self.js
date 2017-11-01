@@ -154,11 +154,6 @@ class DynamicSelf extends React.Component{
             wrapperCol:{span: 20, offset: 4}
         };
 
-        let initialData = [
-            {names: "1", email: "2", phone: "3"},
-            {names: "4", email: "5", phone: "6"},
-            ];
-
         // 与数据回显时候的 keys [-0,-1,-2] 相呼应
         getFieldDecorator('keys', {initialValue: [0]});
 

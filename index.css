@@ -9,13 +9,13 @@ html, body, #root {
   float: left;
 }
 #root1{
-  width: 800px;
+  width: 500px;
   height: 100%;
   float: left;
 }
 
 #root2{
-  width: 600px;
+  width: 500px;
   height: 100%;
   float: left;
 }
