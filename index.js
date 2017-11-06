@@ -8,6 +8,7 @@ import TreeDemo from './components/03.tree'
 import Dynamic from './components/04.DynamicFieldSet';
 import DynamicSelf from './components/05.dynamic-self';
 import D06 from './components/06.dynamic-button';
+import MyTable from './components/07.Table';
 
 
 function App() {
@@ -43,7 +44,7 @@ function Root1() {
     return (
         <div>
 
-            <D06/>
+            <MyTable/>
         </div>
     )
 }
