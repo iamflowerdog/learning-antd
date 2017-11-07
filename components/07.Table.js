@@ -48,7 +48,7 @@ class MyTable extends React.Component {
     start = () => {
         this.setState({ loading: false });
         // ajax request after empty completing
-        let data = this.state.data;
+        let data = this.state.selectedRows;
         console.log(data);
 
     };
