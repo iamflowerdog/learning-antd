@@ -48,6 +48,7 @@ class Dynamic extends React.Component{
     handleSubmit(e){
         e.preventDefault(); // 为了防止屏幕闪烁
         this.props.form.validateFields((error, value) => {
+            console.log(error, value);
             if(!error){
                 console.log(value);
                 const keys = this.props.form.getFieldValue('keys');

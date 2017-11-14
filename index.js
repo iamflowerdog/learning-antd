@@ -44,7 +44,7 @@ function Root1() {
     return (
         <div>
 
-            <MyTable/>
+            <D06/>
         </div>
     )
 }
