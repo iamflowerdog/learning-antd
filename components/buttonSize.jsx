@@ -33,6 +33,7 @@ class ButtonSize extends React.Component{
 
     render(){
        // console.log(this);
+
         let size = this.state.size;
         return (
             <div>
