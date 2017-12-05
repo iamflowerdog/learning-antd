@@ -4,6 +4,9 @@
 import React from 'react';
 import {Tabs, Radio} from 'antd';
 const TabPane = Tabs.TabPane;
+import Tree from './03.tree';
+import Dynamic from './06.dynamic-button';
+import Table from './07.Table';
 
 class SlidingTabsDemo extends React.Component {
     constructor(props) {
@@ -22,18 +25,26 @@ class SlidingTabsDemo extends React.Component {
         const {mode} = this.state;
         return (
             <div className="entry">
-                <Radio.Group onChange={this.handleModeChange} value={mode} style={{marginBottom: 8}}>
-                    <Radio.Button value="top">Horizontal</Radio.Button>
-                    <Radio.Button value="left">Vertical</Radio.Button>
-                </Radio.Group>
+                <div className="header">
+                    <Radio.Group onChange={this.handleModeChange} value={mode}>
+                        <Radio.Button value="top">Horizontal</Radio.Button>
+                        <Radio.Button value="left">Vertical</Radio.Button>
+                    </Radio.Group>
+                </div>
                 <Tabs
                     defaultActiveKey="1"
                     tabPosition={mode}
-                    style={{height: 220}}
+                    style={{height: 1000}}
                 >
-                    <TabPane tab="Tab 1" key="1">Content of tab 1</TabPane>
-                    <TabPane tab="Tab 2" key="2">Content of tab 2</TabPane>
-                    <TabPane tab="Tab 3" key="3">Content of tab 3</TabPane>
+                    <TabPane tab="组织结构" key="1">
+                        <Tree/>
+                    </TabPane>
+                    <TabPane tab="动态表单" key="2">
+                        <Dynamic/>
+                    </TabPane>
+                    <TabPane tab="表格" key="3">
+                        <Table/>
+                    </TabPane>
                     <TabPane tab="Tab 4" key="4">Content of tab 4</TabPane>
                     <TabPane tab="Tab 5" key="5">Content of tab 5</TabPane>
                     <TabPane tab="Tab 6" key="6">Content of tab 6</TabPane>

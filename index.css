@@ -10,7 +10,15 @@ html, body, #root {
 }
 
 .entry{
-  text-align: right;
+  /*text-align: right;*/
+}
+
+.ant-radio-group{
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
 }
 
 .ant-input{
