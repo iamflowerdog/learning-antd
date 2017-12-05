@@ -5,10 +5,6 @@ import React from 'react';
 import {Collapse} from 'antd';
 const Panel = Collapse.Panel;
 
-function callback(key) {
-    console.log(key);
-}
-
 const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
@@ -20,6 +16,10 @@ class MyCollapse extends React.Component{
         super(props);
         this.state = {};
     }
+
+    handleChange(key){
+        console.log(key);
+    }
     render(){
         const text = `
             A dog is a type of domesticated animal.
@@ -27,7 +27,7 @@ class MyCollapse extends React.Component{
             it can be found as a welcome guest in many households across the world.
         `;
         return (
-            <Collapse defaultActiveKey={['1']} onChange={callback}>
+            <Collapse defaultActiveKey={['1']} onChange={this.handleChange} accordion>
                 <Panel header="This is panel header 1" key="1">
                     <p>{text}</p>
                 </Panel>
