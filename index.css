@@ -4,21 +4,13 @@ html, body, #root {
 }
 
 #root{
-  width: 400px;
-  height: 100%;
-  float: left;
-}
-#root1{
-  width: 900px;
-  height: 100%;
-  float: left;
+  /*width: 400px;*/
+  /*height: 100%;*/
+  /*float: left;*/
 }
 
-#root2{
-  width: 500px;
-  height: 100%;
-  float: left;
-  display: none;
+.entry{
+  text-align: right;
 }
 
 .ant-input{
