@@ -8,6 +8,7 @@ import Tree from './03.tree';
 import Dynamic from './06.dynamic-button';
 import Table from './07.Table';
 import MyCollapse from './09.Collapse';
+import MyPagination from './10.Pagination';
 
 class SlidingTabsDemo extends React.Component {
     constructor(props) {
@@ -49,7 +50,9 @@ class SlidingTabsDemo extends React.Component {
                     <TabPane tab="折叠面板" key="4">
                         <MyCollapse/>
                     </TabPane>
-                    <TabPane tab="Tab 5" key="5">Content of tab 5</TabPane>
+                    <TabPane tab="分页" key="5">
+                        <MyPagination/>
+                    </TabPane>
                     <TabPane tab="Tab 6" key="6">Content of tab 6</TabPane>
                     <TabPane tab="Tab 7" key="7">Content of tab 7</TabPane>
                     <TabPane tab="Tab 8" key="8">Content of tab 8</TabPane>
