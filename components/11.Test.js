@@ -3,6 +3,8 @@
  */
 import React from 'react';
 
+
+
 class Test extends React.Component{
     constructor(props){
         super(props);
@@ -22,3 +24,5 @@ class Test extends React.Component{
 }
 
 export default Test;
+
+//测试 React 组件 this.state 在注册组件的时候 this.props.title 属性 如果是Ajax请求，会有缓存
