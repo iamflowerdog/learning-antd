@@ -11,6 +11,7 @@ import MyCollapse from './09.Collapse';
 import MyPagination from './10.Pagination';
 import Test from './11.Test';
 import MyLoader from './12.react-content-loader';
+import MyTooltip from './13.ToolTip'
 
 class SlidingTabsDemo extends React.Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class SlidingTabsDemo extends React.Component {
                     </Radio.Group>
                 </div>
                 <Tabs
-                    defaultActiveKey="7"
+                    defaultActiveKey="8"
                     tabPosition={mode}
                     style={{height: 1000}}
                 >
@@ -70,7 +71,9 @@ class SlidingTabsDemo extends React.Component {
                     <TabPane tab="Tab 7" key="7">
                         <MyLoader/>
                     </TabPane>
-                    <TabPane tab="Tab 8" key="8">Content of tab 8</TabPane>
+                    <TabPane tab="toolTip" key="8">
+                        <MyTooltip/>
+                    </TabPane>
                     <TabPane tab="Tab 9" key="9">Content of tab 9</TabPane>
                     <TabPane tab="Tab 10" key="10">Content of tab 10</TabPane>
                     <TabPane tab="Tab 11" key="11">Content of tab 11</TabPane>
