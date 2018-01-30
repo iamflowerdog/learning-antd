@@ -11,7 +11,8 @@ import MyCollapse from './09.Collapse';
 import MyPagination from './10.Pagination';
 import Test from './11.Test';
 import MyLoader from './12.react-content-loader';
-import MyTooltip from './13.ToolTip'
+import MyTooltip from './13.ToolTip';
+import Zmage from 'react-zmage';
 
 class SlidingTabsDemo extends React.Component {
     constructor(props) {
@@ -74,7 +75,11 @@ class SlidingTabsDemo extends React.Component {
                     <TabPane tab="toolTip" key="8">
                         <MyTooltip/>
                     </TabPane>
-                    <TabPane tab="Tab 9" key="9">Content of tab 9</TabPane>
+                    <TabPane tab="Zmage" key="9">
+                        <Zmage className="z-image" src="../image/0.jpg" alt="pic">
+
+                        </Zmage>
+                    </TabPane>
                     <TabPane tab="Tab 10" key="10">Content of tab 10</TabPane>
                     <TabPane tab="Tab 11" key="11">Content of tab 11</TabPane>
                 </Tabs>

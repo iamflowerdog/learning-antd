@@ -7,7 +7,8 @@
     "antd": "^2.1.0",
     "react": "^15.1.0",
     "react-content-loader": "^1.7.3",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "react-zmage": "^0.1.6"
   },
   "devDependencies": {
     "atool-build": "^0.9.0",
