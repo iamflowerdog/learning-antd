@@ -13,6 +13,7 @@ import Test from './11.Test';
 import MyLoader from './12.react-content-loader';
 import MyTooltip from './13.ToolTip';
 import Zmage from 'react-zmage';
+import MyRow from './14.Row';
 
 class SlidingTabsDemo extends React.Component {
     constructor(props) {
@@ -80,7 +81,9 @@ class SlidingTabsDemo extends React.Component {
 
                         </Zmage>
                     </TabPane>
-                    <TabPane tab="Tab 10" key="10">Content of tab 10</TabPane>
+                    <TabPane tab="Tab 10 珊格布局" key="10">
+                        <MyRow/>
+                    </TabPane>
                     <TabPane tab="Tab 11" key="11">Content of tab 11</TabPane>
                 </Tabs>
             </div>
