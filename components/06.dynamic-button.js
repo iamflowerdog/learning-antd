@@ -120,10 +120,11 @@ class Dynamic extends React.Component{
         const {getFieldDecorator, getFieldValue} = this.props.form;
         const formItemLayout = {
             labelCol: {
-                span: 4
+                span: 4,
+                offset: 2
             },
             wrapperCol: {
-                span: 20,
+                span: 16,
             }
         };
         const formItemLayoutWithOutLabel = {
@@ -144,7 +145,7 @@ class Dynamic extends React.Component{
                                     {required: true, message: 'please input'}
                                 ]
                             })(
-                                <Input/>
+                                <Input autoComplete="off"/>
                             )
                         }
                         {
@@ -196,7 +197,7 @@ class Dynamic extends React.Component{
                         {
                             getFieldDecorator('workMethod',{
                                 rules: [
-                                    {required: true, message: '请输入表单'}
+                                    {required: true, message: "请选择开票类型"}
                                 ]
                             })(
                                 <RadioGroup>
