@@ -48,7 +48,7 @@ class SlidingTabsDemo extends React.Component {
                     </Radio.Group>
                 </div>
                 <Tabs
-                    defaultActiveKey="8"
+                    defaultActiveKey="11"
                     tabPosition={mode}
                     style={{height: 1000}}
                 >
@@ -84,7 +84,9 @@ class SlidingTabsDemo extends React.Component {
                     <TabPane tab="Tab 10 珊格布局" key="10">
                         <MyRow/>
                     </TabPane>
-                    <TabPane tab="Tab 11" key="11">Content of tab 11</TabPane>
+                    <TabPane tab="Tab 11 upload" key="11">
+
+                    </TabPane>
                 </Tabs>
             </div>
         );
