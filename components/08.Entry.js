@@ -14,6 +14,7 @@ import MyLoader from './12.react-content-loader';
 import MyTooltip from './13.ToolTip';
 import Zmage from 'react-zmage';
 import MyRow from './14.Row';
+import DateRange from './16.DateRange';
 
 class SlidingTabsDemo extends React.Component {
     constructor(props) {
@@ -48,7 +49,7 @@ class SlidingTabsDemo extends React.Component {
                     </Radio.Group>
                 </div>
                 <Tabs
-                    defaultActiveKey="11"
+                    defaultActiveKey="12"
                     tabPosition={mode}
                     style={{height: 1000}}
                 >
@@ -86,6 +87,9 @@ class SlidingTabsDemo extends React.Component {
                     </TabPane>
                     <TabPane tab="Tab 11 upload" key="11">
 
+                    </TabPane>
+                    <TabPane tab="自定义日期范围" key="12">
+                        <DateRange/>
                     </TabPane>
                 </Tabs>
             </div>
