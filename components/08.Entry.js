@@ -12,7 +12,6 @@ import MyPagination from './10.Pagination';
 import Test from './11.Test';
 import MyLoader from './12.react-content-loader';
 import MyTooltip from './13.ToolTip';
-import Zmage from 'react-zmage';
 import MyRow from './14.Row';
 import DateRange from './16.DateRange';
 
@@ -51,7 +50,7 @@ class SlidingTabsDemo extends React.Component {
                 <Tabs
                     defaultActiveKey="12"
                     tabPosition={mode}
-                    style={{height: 1000}}
+
                 >
                     <TabPane tab="组织结构" key="1">
                         <Tree/>
@@ -77,11 +76,7 @@ class SlidingTabsDemo extends React.Component {
                     <TabPane tab="toolTip" key="8">
                         <MyTooltip/>
                     </TabPane>
-                    <TabPane tab="Zmage" key="9">
-                        <Zmage className="z-image" src="../image/0.jpg" alt="pic">
 
-                        </Zmage>
-                    </TabPane>
                     <TabPane tab="Tab 10 珊格布局" key="10">
                         <MyRow/>
                     </TabPane>
@@ -91,6 +86,7 @@ class SlidingTabsDemo extends React.Component {
                     <TabPane tab="自定义日期范围" key="12">
                         <DateRange/>
                     </TabPane>
+
                 </Tabs>
             </div>
         );
