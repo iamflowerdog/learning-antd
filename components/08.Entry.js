@@ -5,7 +5,7 @@ import React from 'react';
 import {Tabs, Radio} from 'antd';
 const TabPane = Tabs.TabPane;
 import Tree from './03.tree';
-import Dynamic from './06.dynamic-button';
+import Dynamic from './05.dynamic-self';
 import Table from './07.Table';
 import MyCollapse from './09.Collapse';
 import MyPagination from './10.Pagination';

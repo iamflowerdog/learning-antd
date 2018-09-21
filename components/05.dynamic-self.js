@@ -83,10 +83,16 @@ class DynamicSelf extends React.Component{
         applyMemberDTOs.map((k,index) => {
             ['names', 'email', 'phone'].forEach((field) => {
                 getFieldDecorator(`${field}-${k}`, {initialValue: item.applyMemberDTOs[-k][field]});
+
+                // 对于一些 Select 表单，回显值需要用 setFieldsValue 设置回显值
+                setFieldsValue({
+                    [`${field}-${k}`]: item.applyMemberDTOs[-k][field],
+                })
             });
 
             // getFieldDecorator(`email-${k}`, {initialValue: item.applyMemberDTOs[-k].email});
             // getFieldDecorator(`phone-${k}`, {initialValue: item.applyMemberDTOs[-k].phone});
+
         });
 
     };
@@ -158,6 +164,8 @@ class DynamicSelf extends React.Component{
         getFieldDecorator('keys', {initialValue: [0]});
 
         const keys = getFieldValue('keys');
+
+        console.log(keys);
 
         const formItems = keys.map((k, index) => {
 
